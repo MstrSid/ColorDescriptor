@@ -8,9 +8,31 @@
 
     <Spinner
         android:id="@+id/spinnerColors"
-        android:layout_width="409dp"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:layout_margin="6dp"
+        android:entries="@array/colors"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:onClick="showDescription"
+        android:id="@+id/buttonFindDescription"
+        android:layout_width="0dp"
+        android:layout_margin="6dp"
+        android:layout_height="wrap_content"
+        android:text="@string/button_find_description"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinnerColors" />
+
+    <TextView
+        android:id="@+id/textViewDescriptionTemp"
+        android:layout_width="0dp"
+        android:layout_margin="6dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonFindDescription" />
 </androidx.constraintlayout.widget.ConstraintLayout>
