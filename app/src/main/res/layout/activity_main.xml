@@ -4,25 +4,30 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#FFFFFF"
     tools:context=".MainActivity">
 
     <Spinner
         android:id="@+id/spinnerColors"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_margin="6dp"
+        android:layout_marginLeft="6dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginRight="6dp"
+        android:layout_marginBottom="6dp"
         android:entries="@array/colors"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:onClick="showDescription"
         android:id="@+id/buttonFindDescription"
         android:layout_width="0dp"
-        android:layout_margin="6dp"
         android:layout_height="wrap_content"
+        android:layout_margin="6dp"
+        android:onClick="showDescription"
         android:text="@string/button_find_description"
+        android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/spinnerColors" />
@@ -30,8 +35,9 @@
     <TextView
         android:id="@+id/textViewDescriptionTemp"
         android:layout_width="0dp"
-        android:layout_margin="6dp"
         android:layout_height="wrap_content"
+        android:layout_margin="6dp"
+        android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/buttonFindDescription" />
